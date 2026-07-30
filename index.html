@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" data-lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Basic SEO -->
+  <title>mcecare | Home Healthcare Services Jeddah Saudi Arabia</title>
+  <meta name="description" content="mcecare brings premium physiotherapy, home lab tests, doctor consultations, and professional caregiver services directly to your door in Jeddah, KSA. Book a home visit today.">
+  <meta name="keywords" content="home healthcare jeddah, physiotherapy at home jeddah, home lab tests jeddah, home doctor jeddah, caregiver jeddah, mcecare saudi arabia">
+  <meta name="author" content="mcecare">
+
+  <!-- Inline Script to Prevent FOUC (Language/RTL setup) -->
+  <script>
+    (function() {
+      const savedLang = localStorage.getItem('preferred-lang') || 'ar';
+      document.documentElement.setAttribute('lang', savedLang);
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Public/fav.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" aria-label="Loading Website" role="status" aria-live="polite">
+    <div class="preloader-content">
+      <img src="Public/presentlogo.png" alt="mcecare Logo" class="preloader-logo">
+      <div class="preloader-spinner-container">
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STYLED HEADER -->
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="mcecare Home Page">
+        <img src="Public/presentlogo.png" alt="mcecare Logo" class="logo-img">
+        <span class="logo-text">
+          <span class="logo-text-en">mcecare</span>
+          <span class="logo-arabic">الرعاية الطبية</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Desktop Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
+        <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="blogs.html" class="nav-link" data-i18n="nav_blogs">Blogs & FAQ</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a>
+      </nav>
+
+      <div class="header-actions-group">
+        <div class="lang-toggle-pill" role="group" aria-label="Language selection">
+          <button id="lang-btn-en" class="lang-toggle-btn" aria-label="Switch to English">EN</button>
+          <button id="lang-btn-ar" class="lang-toggle-btn active" aria-label="Switch to Arabic">عربي</button>
+        </div>
+        <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary header-cta-phone" aria-label="Call support line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="display:inline-block; vertical-align: middle; margin-inline-end: 8px;">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span data-i18n="btn_call">Call Us</span>
+        </a>
+        <button class="btn btn-primary header-cta open-modal-btn" data-i18n="btn_book">Book Now</button>
+        <button id="nav-toggle-btn" class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="nav-mobile-overlay" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <button id="nav-close-btn" class="nav-mobile-close" aria-label="Close navigation menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <a href="index.html" class="nav-link mobile-nav-item" data-i18n="nav_home">Home</a>
+    <a href="about.html" class="nav-link mobile-nav-item" data-i18n="nav_about">About Us</a>
+    <a href="services.html" class="nav-link mobile-nav-item" data-i18n="nav_services">Services</a>
+    <a href="blogs.html" class="nav-link mobile-nav-item" data-i18n="nav_blogs">Blogs & FAQ</a>
+    <a href="contact.html" class="nav-link mobile-nav-item" data-i18n="nav_contact">Contact Us</a>
+    <button class="btn btn-primary open-modal-btn mobile-nav-item" style="width: 100%; max-width: 280px; margin-top: 16px;" data-i18n="btn_book">Book Now</button>
+  </div>
+
+  <main role="main">
+    
+    <!-- HERO SECTION -->
+    <section id="hero" class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-eyebrow" data-i18n="hero_eyebrow">Serving Families Across Jeddah</span>
+        <h1 class="hero-title" data-i18n-html="hero_title">The clinic, at <em>your</em> door.</h1>
+        <p class="hero-subhead" data-i18n="hero_subhead">
+          mcecare brings certified physiotherapy, home lab tests, doctor consultations, and professional caretaker services directly to your door in Jeddah. Book your home visit today.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary open-modal-btn" data-i18n="btn_book">Book a home visit &rarr;</button>
+          <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span data-i18n="btn_call">Call Us</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-i18n="hero_stat_services_num">4</span>
+            <span class="stat-label" data-i18n="hero_stat_services_lbl">Core services</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-i18n="hero_stat_arrival_num">Under 60 Mins</span>
+            <span class="stat-label" data-i18n="hero_stat_arrival_lbl">Response Time</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-i18n="hero_stat_cities_num">Jeddah</span>
+            <span class="stat-label" data-i18n="hero_stat_cities_lbl">Coverage Area</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature live tracking graphic -->
+      <div class="tracking-card">
+        <div class="tracking-card-header">
+          <div class="tracking-badge">
+            <span class="tracking-dot" aria-hidden="true"></span>
+            <span data-i18n="tracking_title">LIVE VISIT TRACKING</span>
+          </div>
+          <span class="tracking-city" data-i18n="tracking_city">Jeddah (Al Sharafeyah)</span>
+        </div>
+        <div class="tracking-svg-container">
+          <svg id="tracking-svg" width="100%" height="100%" viewBox="0 0 420 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 60 100 Q 160 10, 210 120 T 360 100" stroke="rgba(255, 255, 255, 0.12)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 60 100 Q 160 10, 210 120 T 360 100" stroke="var(--gold-light)" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <g transform="translate(40, 80)">
+              <circle cx="20" cy="20" r="20" fill="var(--teal)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+              <path d="M 10 32 L 10 16 L 30 16 L 30 32 Z" stroke="var(--white)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M 17 32 L 17 25 L 23 25 L 23 32 Z" stroke="var(--white)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M 20 6 V 12 M 17 9 H 23" stroke="var(--gold-light)" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+            
+            <g>
+              <circle cx="360" cy="100" r="18" stroke="var(--rose)" stroke-width="1.5" class="pulse-ring" fill="none"/>
+              <circle cx="360" cy="100" r="30" stroke="var(--rose)" stroke-width="1" class="pulse-ring" fill="none" style="animation-delay: 1s;"/>
+              <circle cx="360" cy="100" r="42" stroke="var(--rose)" stroke-width="1" class="pulse-ring" fill="none" style="animation-delay: 2s;"/>
+              
+              <g transform="translate(340, 80)">
+                <circle cx="20" cy="20" r="20" fill="var(--teal)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+                <path d="M 10 32 L 10 20 L 20 12 L 30 20 L 30 32 Z" stroke="var(--white)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M 16 32 L 16 26 L 24 26 L 24 32 Z" stroke="var(--white)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M 7 21 L 20 10 L 33 21" stroke="var(--gold-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+
+            <circle cx="0" cy="0" r="11" fill="var(--rose)" opacity="0.35" class="moving-provider-glow"/>
+            <circle cx="0" cy="0" r="6" fill="var(--rose)" class="moving-provider-dot"/>
+          </svg>
+        </div>
+        <div class="tracking-card-footer">
+          <span class="tracking-status-title" data-i18n="tracking_status">Visit Status: En Route</span>
+          <span class="tracking-status-desc" data-i18n="tracking_desc">Dr. Layla (Physiotherapist) is arriving in approximately 12 minutes.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-container">
+        <div class="trust-item">
+          <div class="trust-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 11 2 2 4-4"/>
+            </svg>
+          </div>
+          <span class="trust-text" data-i18n="trust_1">All providers licensed and background-checked</span>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <circle cx="12" cy="16" r="3"/>
+            </svg>
+          </div>
+          <span class="trust-text" data-i18n="trust_2">Same-day and scheduled visits available</span>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            </svg>
+          </div>
+          <span class="trust-text" data-i18n="trust_3">Male and female providers, your choice</span>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <span class="trust-text" data-i18n="trust_4">Digital reports sent straight to your phone</span>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <span class="trust-text" data-i18n="trust_5">Response times vary by district & city</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="container section-padding reveal">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="services_eyebrow">What we offer</span>
+        <h2 class="section-title" data-i18n="services_title">Four ways we bring care home.</h2>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card stagger-item">
+          <div class="service-icon-container" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title" data-i18n="service_4_title">Home Caretaker</h3>
+          <p class="service-desc" data-i18n="service_4_desc">
+            Access compassionate, background-checked caretakers specialized in long-term elderly assistance, post-operative care, and daily physical support. Plans are flexible, offering both hourly and 24/7 live-in options.
+          </p>
+          <div class="service-badges">
+            <span class="badge-rose" data-i18n="service_4_badge">Hourly or Live-In</span>
+            <span class="badge-price" data-i18n="price_from">From 99 SAR</span>
+          </div>
+          <button class="btn btn-secondary" style="margin-top: 16px; width: 100%;" data-whatsapp-service="Home Caregiver" data-i18n="btn_book">Book Now</button>
+        </div>
+
+        <div class="service-card stagger-item">
+          <div class="service-icon-container" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title" data-i18n="service_1_title">Physiotherapy at Home</h3>
+          <p class="service-desc" data-i18n="service_1_desc">
+            Receive custom recovery support including post-surgery rehabilitation, chronic pain relief, and intensive mobility therapy. Every session is conducted in the comfort and privacy of your own home by certified therapists.
+          </p>
+          <div class="service-badges">
+            <span class="badge-gold" data-i18n="service_1_badge">45–60 Min Sessions</span>
+            <span class="badge-price" data-i18n="price_from">From 99 SAR</span>
+          </div>
+          <button class="btn btn-secondary" style="margin-top: 16px; width: 100%;" data-whatsapp-service="Physiotherapy" data-i18n="btn_book">Book Now</button>
+        </div>
+
+        <div class="service-card stagger-item">
+          <div class="service-icon-container" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M12 8v8"/>
+              <path d="M8 12h8"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title" data-i18n="service_2_title">Home Lab Tests</h3>
+          <p class="service-desc" data-i18n="service_2_desc">
+            Avoid clinics with our certified phlebotomists who travel to you. We perform sanitary sample collections for clinical diagnostics and deliver secure, digital test reports straight to your phone within 24 hours.
+          </p>
+          <div class="service-badges">
+            <span class="badge-gold" data-i18n="service_2_badge">Results in 24 Hours</span>
+            <span class="badge-price" data-i18n="price_from">From 99 SAR</span>
+          </div>
+          <button class="btn btn-secondary" style="margin-top: 16px; width: 100%;" data-whatsapp-service="Home Lab Tests" data-i18n="btn_book">Book Now</button>
+        </div>
+
+        <div class="service-card stagger-item">
+          <div class="service-icon-container" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.8 8H12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4.8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z"/>
+              <path d="M14 6h4a2 2 0 0 1 2 2v3a6 6 0 0 1-12 0v-3a2 2 0 0 1 2-2h4"/>
+              <path d="M12 17v4"/>
+              <circle cx="12" cy="22" r="2"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title" data-i18n="service_3_title">Home Consultation</h3>
+          <p class="service-desc" data-i18n="service_3_desc">
+            Schedule experienced general practitioners and specialists for at-home check-ups, diagnostic examinations, prescription updates, and thorough patient follow-ups without the stress of travel.
+          </p>
+          <div class="service-badges">
+            <span class="badge-gold" data-i18n="service_3_badge">GPs & Specialists</span>
+            <span class="badge-price" data-i18n="price_from">From 99 SAR</span>
+          </div>
+          <button class="btn btn-secondary" style="margin-top: 16px; width: 100%;" data-whatsapp-service="Home Consultation" data-i18n="btn_book">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="how" class="how-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="how_eyebrow">The process</span>
+          <h2 class="section-title" data-i18n="how_title">From a phone call to care at your door.</h2>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step stagger-item">
+            <span class="process-num">01</span>
+            <h3 class="process-step-title" data-i18n="how_step1_title">Choose a service</h3>
+            <p class="process-step-desc" data-i18n="how_step1_desc">Select from physiotherapy, home laboratory diagnostics, doctor consultations, or caretaker support.</p>
+          </div>
+
+          <div class="process-step stagger-item">
+            <span class="process-num">02</span>
+            <h3 class="process-step-title" data-i18n="how_step2_title">Pick a time</h3>
+            <p class="process-step-desc" data-i18n="how_step2_desc">Choose a convenient date and slot, and indicate your preference for a male or female provider.</p>
+          </div>
+
+          <div class="process-step stagger-item">
+            <span class="process-num">03</span>
+            <h3 class="process-step-title" data-i18n="how_step3_title">Provider arrives</h3>
+            <p class="process-step-desc" data-i18n="how_step3_desc">Our fully licensed healthcare practitioner arrives at your door with all necessary equipment in hand.</p>
+          </div>
+
+          <div class="process-step stagger-item">
+            <span class="process-num">04</span>
+            <h3 class="process-step-title" data-i18n="how_step4_title">Care summary</h3>
+            <p class="process-step-desc" data-i18n="how_step4_desc">Access digital medical reports, treatment notes, and physician prescriptions straight on your phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US / TESTIMONIALS SECTION -->
+    <section id="why" class="container section-padding reveal">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="why_eyebrow">Families trust us</span>
+        <h2 class="section-title" data-i18n="why_title">What it feels like to have care come to you.</h2>
+      </div>
+
+      <div class="why-split-container">
+        <div class="testimonials-grid">
+          <div class="testimonial-card stagger-item">
+            <p class="testimonial-quote" data-i18n="why_quote1">
+              "Having a licensed physical therapist travel to our home in Jeddah saved my father hours of painful car travel for his post-stroke rehabilitation. The therapy sessions were gentle, reassuring, and highly effective."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Sarah A.</span>
+              <span class="author-location" data-i18n="Jeddah">Jeddah</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card stagger-item">
+            <p class="testimonial-quote" data-i18n="why_quote2">
+              "I requested complete blood work diagnostic testing for my elderly mother. The phlebotomist arrived prompt and completed the tests cleanly. Her digital lab results were delivered straight to my phone in under 24 hours."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Faisal K.</span>
+              <span class="author-location" data-i18n="Jeddah">Jeddah</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card stagger-item">
+            <p class="testimonial-quote" data-i18n="why_quote3">
+              "Knowing my grandmother has a compassionate, professional live-in caretaker in Jeddah gives our whole family peace of mind. The level of care, respect, and communication has been outstanding."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Mariam F.</span>
+              <span class="author-location" data-i18n="Jeddah">Jeddah</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-frame stagger-item">
+          <img src="Public/verified_staff_care.png" alt="Licensed medical provider visiting home" loading="lazy">
+          <span class="photo-caption" data-i18n="why_team_caption">Our licensed care team</span>
+          <div class="photo-frame-highlights">
+            <div class="highlight-item">
+              <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg>
+              <div>
+                <h4 class="highlight-title" data-i18n="why_high_1_title">SCFHS Certified</h4>
+                <p class="highlight-text" data-i18n="why_high_1_desc">All medical professionals are registered with the Saudi Commission for Health Specialties.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <div>
+                <h4 class="highlight-title" data-i18n="why_high_2_title">100% Background Checked</h4>
+                <p class="highlight-text" data-i18n="why_high_2_desc">Rigorous vetting ensures clinical excellence and complete family safety.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div>
+                <h4 class="highlight-title" data-i18n="why_high_3_title">Bilingual Support</h4>
+                <p class="highlight-text" data-i18n="why_high_3_desc">Clear, direct communication in both Arabic and English during visits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="container" style="padding-bottom: 100px;">
+      <div class="cta-banner reveal">
+        <svg class="cta-bg-pattern" width="100%" height="100%" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 100 Q 200 300, 400 100 T 800 300" stroke="var(--gold-light)" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 0 200 Q 200 400, 400 200 T 800 100" stroke="var(--white)" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        <h2 class="cta-title" data-i18n="cta_title">Ready to bring care home?</h2>
+        <p class="cta-desc" data-i18n="cta_desc">
+          Schedule your same-day home appointment with Riyadh, Jeddah, and Dammam's most trusted home healthcare network.
+        </p>
+        <div class="cta-btn-wrapper">
+          <button class="btn btn-gold open-modal-btn" data-i18n="btn_book">Book a home visit &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STYLED FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <span class="footer-logo-text">mcecare</span>
+          <span class="footer-logo-arabic">الرعاية الطبية</span>
+        </div>
+        <p class="footer-blurb" data-i18n="footer_blurb">Providing Saudi families with certified and compassionate home healthcare services directly at their doorstep. Your safety, choice, and recovery are our primary goals.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_services">Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link" data-i18n="service_1_title">Physiotherapy at Home</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_2_title">Home Lab Tests</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_3_title">Home Consultation</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_4_title">Home Caretaker</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_company">Company</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" class="footer-link" data-i18n="nav_about">About Us</a></li>
+          <li><a href="blogs.html" class="footer-link" data-i18n="nav_blogs">Blogs & FAQ</a></li>
+          <li><a href="contact.html" class="footer-link" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_contact">Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <div class="stat-label" data-i18n="footer_phone_lbl">Phone Support</div>
+            <a href="tel:PHONE_PLACEHOLDER" class="phone-number">+966 54 113 4385</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <div class="stat-label" data-i18n="footer_email_lbl">Email Support</div>
+             <a href="mailto:contactus@mcecare.com">contactus@mcecare.com</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <address style="font-style: normal; font-size: 0.85rem;" data-i18n="footer_address">
+              506, 5th Floor, Advanced Business Center, Sharafiya, Khaled Ibn Al Walid, Al Sharafeyah, Jeddah, KSA
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-bottom-compliance" data-i18n="footer_compliance">
+        Regulatory Compliance Notice: Licensing details are temporary and will be filled prior to launch.
+      </div>
+      <p data-i18n="footer_copyright">Copyright © 2026 Medical Care. All rights reserved. Serving Jeddah.</p>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="sticky-mobile-bar" role="complementary" aria-label="Quick Actions">
+    <div class="sticky-mobile-bar-container">
+      <a href="#" class="btn btn-gold whatsapp-general-link" data-i18n="btn_book">Book Now</a>
+      <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary" style="color:var(--white); border-color:var(--white);" data-i18n="btn_call">Call Now</a>
+    </div>
+  </div>
+
+  <!-- STACKED FLOATING CTAS (Desktop only via CSS) -->
+  <div class="floating-ctas-container">
+    <a href="tel:PHONE_PLACEHOLDER" class="call-float" aria-label="Call mcecare support team">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <!-- Premium WhatsApp Chat Widget -->
+  <div id="whatsapp-widget" class="wa-widget-container">
+    <button id="wa-widget-btn" class="wa-widget-toggle" aria-label="Open WhatsApp Chat">
+      <span class="wa-widget-badge">1</span>
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.458 3.473 1.332 4.988L2 22l5.176-1.357c1.467.8 3.12 1.22 4.826 1.22l.012.001c5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm6.262 14.281c-.256.725-1.488 1.32-2.031 1.394-.488.066-1.125.138-3.238-.737-2.693-1.116-4.431-3.86-4.569-4.043-.131-.188-1.075-1.438-1.075-2.738 0-1.306.675-1.944.919-2.2.206-.219.544-.331.875-.331.112 0 .212.006.3.012.262.012.394.031.569.45.219.525.75 1.831.812 1.962.062.131.106.281.019.456-.088.175-.162.281-.319.462-.156.181-.331.406-.475.544-.162.156-.331.325-.144.65.188.319.831 1.369 1.781 2.219.144.131.25.162.394.212.188.062.375.05.519-.012.144-.062.619-.719.787-.962.169-.244.338-.2.569-.112.231.088 1.469.694 1.719.819.25.125.419.188.481.294.063.106.063.613-.193 1.338z"/></svg>
+      <span class="wa-btn-text" data-i18n="wa_chat_btn">Chat with us</span>
+    </button>
+    
+    <div id="wa-chat-window" class="wa-chat-card">
+      <div class="wa-chat-header">
+        <div class="wa-chat-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="wa-online-dot"></span>
+        </div>
+        <div class="wa-chat-header-info">
+          <div class="wa-chat-name">mcecare Support</div>
+          <div class="wa-chat-status" data-i18n="wa_online_status">Typically replies in minutes</div>
+        </div>
+        <button id="wa-chat-close" class="wa-chat-close-btn" aria-label="Close Chat Window">&times;</button>
+      </div>
+      
+      <div class="wa-chat-body">
+        <div class="wa-chat-bubble">
+          <div class="wa-chat-sender">mcecare Coordinator</div>
+          <div class="wa-chat-message" data-i18n="wa_welcome_msg">Hello! How can we help you today with your home healthcare booking?</div>
+          <div class="wa-chat-time">Just now</div>
+        </div>
+      </div>
+      
+      <div class="wa-chat-footer">
+        <a href="#" class="btn btn-primary wa-start-chat-btn whatsapp-general-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="display:inline-block; margin-inline-end: 8px; vertical-align: middle;"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.458 3.473 1.332 4.988L2 22l5.176-1.357c1.467.8 3.12 1.22 4.826 1.22l.012.001c5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm6.262 14.281c-.256.725-1.488 1.32-2.031 1.394-.488.066-1.125.138-3.238-.737-2.693-1.116-4.431-3.86-4.569-4.043-.131-.188-1.075-1.438-1.075-2.738 0-1.306.675-1.944.919-2.2.206-.219.544-.331.875-.331.112 0 .212.006.3.012.262.012.394.031.569.45.219.525.75 1.831.812 1.962.062.131.106.281.019.456-.088.175-.162.281-.319.462-.156.181-.331.406-.475.544-.162.156-.331.325-.144.65.188.319.831 1.369 1.781 2.219.144.131.25.162.394.212.188.062.375.05.519-.012.144-.062.619-.719.787-.962.169-.244.338-.2.569-.112.231.088 1.469.694 1.719.819.25.125.419.188.481.294.063.106.063.613-.193 1.338z"/></svg>
+          <span data-i18n="wa_start_chat">Start Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING LEAD MODAL -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card" role="document">
+      <button id="modal-close-btn" class="modal-close" aria-label="Close booking modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+      </button>
+      <div id="modal-form-content">
+        <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Book a Home Visit</h2>
+        <p class="modal-desc" data-i18n="modal_desc">Fill in the form to notify our medical coordinator and start your booking process.</p>
+        <form id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-name" data-i18n="form_name_lbl">Full Name *</label>
+              <input type="text" id="booking-name" name="name" class="form-input" data-i18n="form_name_placeholder" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-phone" data-i18n="form_phone_lbl">Phone Number (Saudi Arabia) *</label>
+              <input type="tel" id="booking-phone" name="phone" class="form-input" data-i18n="form_phone_placeholder" required aria-required="true">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-service" data-i18n="form_service_lbl">Select Service *</label>
+              <select id="booking-service" name="service" class="form-select" required aria-required="true">
+                <option value="" disabled selected data-i18n="form_service_placeholder">Choose a service</option>
+                <option value="Home Caregiver" data-i18n="service_4_title">Home Caregiver</option>
+                <option value="Physiotherapy" data-i18n="service_1_title">Physiotherapy at Home</option>
+                <option value="Home Lab Tests" data-i18n="service_2_title">Home Lab Tests</option>
+                <option value="Home Consultation" data-i18n="service_3_title">Home Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-gender" data-i18n="form_gender_lbl">Provider Gender Preference</label>
+              <select id="booking-gender" name="gender_preference" class="form-select">
+                <option value="None" data-i18n="form_gender_opt_none">No Preference</option>
+                <option value="Female" data-i18n="form_gender_opt_female">Female Practitioner</option>
+                <option value="Male" data-i18n="form_gender_opt_male">Male Practitioner</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-city" data-i18n="form_city_lbl">City *</label>
+              <select id="booking-city" name="city" class="form-select" required aria-required="true">
+                <option value="" disabled selected data-i18n="form_city_placeholder">Select your city</option>
+                <option value="Jeddah" data-i18n="Jeddah">Jeddah</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-date" data-i18n="form_date_lbl">Preferred Date</label>
+              <input type="date" id="booking-date" name="preferred_date" class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="booking-message" data-i18n="form_msg_lbl">Your Message</label>
+            <textarea id="booking-message" name="message" class="form-textarea" data-i18n="form_msg_placeholder"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary modal-submit-btn" data-i18n="form_submit">Confirm Booking</button>
+        </form>
+      </div>
+      <div id="modal-success-content" class="modal-success-content" role="status" aria-live="polite">
+        <div class="success-icon-wrapper">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h2 class="success-title" data-i18n="success_title">Request Received</h2>
+        <p id="success-desc-render" class="success-desc" data-i18n="success_desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unified JS -->
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>
