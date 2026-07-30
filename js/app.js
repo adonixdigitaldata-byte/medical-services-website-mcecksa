@@ -154,12 +154,6 @@ const translations = {
     blog_2_excerpt: "Learn about the hygienic sample collection protocols and how secure digital reports reach you...",
     blog_3_title: "Caring for Elderly Parents at Home: A Saudi Family's Guide",
     blog_3_excerpt: "A comprehensive guide on adjustments, physical safety setups, and home caregiver assistance...",
-    blog_4_title: "Post-Surgery Recovery: A Checklist for Home Care",
-    blog_4_excerpt: "Make post-op rehabilitation smoother with this simple home environment check...",
-    blog_5_title: "Managing Chronic Conditions During Ramadan",
-    blog_5_excerpt: "Crucial medical tips for fasting safely while managing diabetes, blood pressure, and medications...",
-    blog_6_title: "5 Signs Your Loved One May Need a Home Caregiver",
-    blog_6_excerpt: "Recognizing the changes in physical mobility and memory that point to professional assistance...",
     
     // FAQ
     faq_eyebrow: "Got Questions?",
@@ -199,7 +193,6 @@ const translations = {
     footer_title_services: "Our Services",
     footer_title_company: "Company",
     footer_title_contact: "Contact Us",
-    footer_compliance: "Regulatory Compliance Notice: Licensing details are temporary and will be filled prior to launch.",
     footer_copyright: "Copyright © 2026 mcecare. All rights reserved. Serving Jeddah.",
     footer_address: "506, 5th Floor, Advanced Business Center, Sharafiya, Khaled Ibn Al Walid, Al Sharafeyah, Jeddah, KSA",
     cta_title: "Ready to bring care home?",
@@ -358,12 +351,6 @@ const translations = {
     blog_2_excerpt: "تعرف على بروتوكولات جمع العينات الصحية وكيف تصلك تقارير التحاليل الرقمية...",
     blog_3_title: "رعاية الوالدين المسنين في المنزل: دليل الأسرة السعودية",
     blog_3_excerpt: "دليل شامل عن التعديلات المنزلية، إعدادات السلامة البدنية، ومساعدة مرافق الرعاية...",
-    blog_4_title: "التعافي بعد الجراحة: قائمة مرجعية للرعاية المنزلية",
-    blog_4_excerpt: "اجعل إعادة التأهيل بعد العملية الجراحية أكثر سلاسة مع هذا الفحص البسيط للبيئة المنزلية...",
-    blog_5_title: "إدارة الأمراض المزمنة خلال شهر رمضان المبارك",
-    blog_5_excerpt: "نصائح طبية هامة للصيام بأمان مع إدارة السكري وضغط الدم وجدول الأدوية...",
-    blog_6_title: "٥ علامات تدل على أن عزيزاً عليك قد يحتاج إلى مرافق رعاية منزلي",
-    blog_6_excerpt: "التعرف على التغيرات في الحركة البدنية والذاكرة التي تشير إلى الحاجة لمساعدة احترافية...",
 
     // FAQ
     faq_eyebrow: "لديك استفسار؟",
@@ -403,7 +390,6 @@ const translations = {
     footer_title_services: "خدماتنا",
     footer_title_company: "الشركة",
     footer_title_contact: "اتصل بنا",
-    footer_compliance: "إشعار الامتثال التنظيمي: تفاصيل الترخيص مؤقتة وسيتم تعبئتها قبل الإطلاق.",
     footer_copyright: "حقوق الطبع والنشر © ٢٠٢٦ الرعاية الطبية. جميع الحقوق محفوظة. نخدم جدة.",
     footer_address: "٥٠٦، الطابق الخامس، مركز الأعمال المتقدم، الشرفية، شارع خالد بن الوليد، الشرفية، جدة، المملكة العربية السعودية",
     cta_title: "هل أنت مستعد لجلب الرعاية إلى منزلك؟",

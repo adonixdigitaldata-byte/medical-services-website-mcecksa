@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Basic SEO -->
-  <title>About Us | mcecare Home Healthcare Jeddah</title>
-  <meta name="description" content="Learn about mcecare's mission, values, and verified healthcare professionals offering home visit services across Jeddah.">
-  <meta name="keywords" content="about mcecare, home healthcare jeddah, home nursing jeddah, medical team jeddah">
-  <meta name="author" content="mcecare">
-
+  <title>When to Consider Home Physiotherapy vs. a Clinic Visit | mcecare</title>
+  <meta name="description" content="Discover the benefits of in-home physical therapy compared to traditional clinic visits, including convenience, customized exercises, and travel reduction in Jeddah.">
+  
   <!-- Inline Script to Prevent FOUC -->
   <script>
     (function() {
@@ -30,6 +28,143 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css?v=2">
+
+  <style>
+    /* Language Toggle Visibility styling */
+    html[lang="en"] .lang-ar { display: none !important; }
+    html[lang="ar"] .lang-en { display: none !important; }
+
+    .blog-detail-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      background-color: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+    .blog-content {
+      font-family: var(--font-body);
+      color: var(--ink);
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    .blog-content h2, .blog-content h3 {
+      font-family: var(--font-display);
+      color: var(--teal-deep);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .blog-content p {
+      margin-bottom: 1.5rem;
+    }
+    .blog-content ul {
+      margin-bottom: 1.5rem;
+      padding-inline-start: 24px;
+    }
+    .blog-content li {
+      margin-bottom: 0.5rem;
+    }
+    .blog-content blockquote {
+      border-inline-start: 4px solid var(--gold);
+      padding: 15px 24px;
+      margin: 2.5rem 0;
+      font-style: italic;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      color: var(--ink-soft);
+    }
+    .share-section {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--bg-alt);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .share-title {
+      font-family: var(--font-display);
+      color: var(--teal-deep);
+      font-size: 1.25rem;
+      margin: 0;
+    }
+    .share-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-pill);
+      background-color: var(--bg);
+      color: var(--teal);
+      transition: var(--transition-fast);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .share-btn:hover {
+      background-color: var(--teal);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    .copy-toast {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--teal-deep);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      z-index: 1000;
+      box-shadow: var(--shadow-md);
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, 10px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+    .blog-hero-header {
+      background-color: var(--teal-deep);
+      color: var(--white);
+      padding: 100px 24px 140px 24px;
+      text-align: center;
+    }
+    .blog-hero-header .badge-gold {
+      background-color: var(--gold);
+      color: var(--white);
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .blog-hero-header h1 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+    .blog-hero-meta {
+      font-size: 0.95rem;
+      color: var(--gold-light);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 <body>
 
@@ -81,7 +216,7 @@
     </div>
   </header>
 
-  <!-- Mobile Overlay Navigation -->
+  <!-- Mobile Overlay Navigation menu -->
   <div class="nav-mobile-overlay" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
     <button id="nav-close-btn" class="nav-mobile-close" aria-label="Close navigation menu">
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -98,88 +233,111 @@
 
   <main role="main">
     
-    <!-- ABOUT HERO -->
-    <section class="about-hero">
+    <!-- BLOG HERO HEADER -->
+    <section class="blog-hero-header">
       <div class="container">
-        <span class="hero-eyebrow" data-i18n="about_eyebrow">Our Story</span>
-        <h1 class="hero-title" style="margin-top: 12px;" data-i18n="about_title">Compassionate care at your doorstep in Jeddah</h1>
-      </div>
-    </section>
-
-    <!-- MISSION & VALUES -->
-    <section class="container section-padding reveal">
-      <div class="about-grid">
-        <div>
-          <h2 class="section-title" style="margin-bottom: 20px;" data-i18n="about_mission_title">Our Mission</h2>
-          <p data-i18n="about_mission_desc">Medical Care exists to bring professional, high-quality, and reliable medical services directly to Saudi families in Jeddah. We specialize in post-surgery rehabilitation, chronic pain relief, elderly support, and home doctor visits, removing the physical burden of clinic travel.</p>
-        </div>
-        <div class="photo-frame">
-          <img src="Public/compassionate_care.png" alt="Healthcare provider holding patient's hand" loading="lazy">
+        <span class="badge-gold lang-en">Recovery</span>
+        <span class="badge-gold lang-ar">التعافي وإعادة التأهيل</span>
+        
+        <h1 class="lang-en">When to Consider Home Physiotherapy vs. a Clinic Visit</h1>
+        <h1 class="lang-ar">متى يجب التفكير في العلاج الطبيعي المنزلي مقابل زيارة العيادة</h1>
+        
+        <div class="blog-hero-meta">
+          <span>5 <span data-i18n="read_time">min read</span></span>
+          <span>&bull;</span>
+          <span class="lang-en">By mcecare Health Team</span>
+          <span class="lang-ar">بواسطة فريق الرعاية الطبية الصحي</span>
         </div>
       </div>
     </section>
 
-    <!-- CORE VALUES -->
-    <section class="how-section section-padding reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow" data-i18n="about_values_title">Our Core Values</span>
-          <h2 class="section-title" data-i18n="about_values_title">Our Core Values</h2>
-        </div>
-        <div class="values-grid">
-          <div class="value-card stagger-item">
-            <h3 style="color: var(--teal-deep); margin-bottom: 12px;" data-i18n="value_dignity_title">Dignity & Care</h3>
-            <p data-i18n="value_dignity_desc">We treat every patient like family, prioritizing comfort and emotional well-being.</p>
+    <!-- BLOG DETAIL CONTAINER -->
+    <article class="container">
+      <div class="blog-detail-container">
+        <div class="blog-content">
+          
+          <!-- English Content -->
+          <div class="lang-en">
+            <p>Recovering from a major surgery, managing chronic pain, or supporting a family member with limited mobility can be incredibly challenging. In these moments, physical rehabilitation is key to reclaiming health. However, a significant decision remains: Should you travel to a physiotherapy clinic or choose in-home care?</p>
+            
+            <p>While physical therapy clinics are popular, home physiotherapy has emerged as a premium, highly effective alternative. Below, we look at when to consider home physiotherapy and how it compares to clinic-based treatment.</p>
+            
+            <h2>1. The Comfort and Safety of Your Own Home</h2>
+            <p>A clinic environment can sometimes feel sterile or high-pressure, leading to patient anxiety. At home, you perform exercises in the environment you navigate daily. This translates directly to practical functional recovery—like practicing how to sit, climb steps, or move in your kitchen.</p>
+            <blockquote>"Rehabilitation is most successful when it fits seamlessly into the patient's daily environment and routines."</blockquote>
+            
+            <h2>2. 1-on-1 Dedicated Support</h2>
+            <p>In many clinics, a physiotherapist splits attention between multiple patients simultaneously. With home care, your therapist focuses solely on you for the entire 45-to-60 minute session, giving you customized, undivided attention that can lead to faster progress.</p>
+            
+            <h2>3. Eliminating the Strain of Travel</h2>
+            <p>Traveling across Jeddah to reach a clinic can be exhausting and painful, especially for patients with post-surgery vulnerability or severe joint conditions. Commuting can actually worsen swelling and pain, undoing the benefits of the therapy session itself. Home visits remove this travel strain completely.</p>
+            
+            <h2>Conclusion: Is Home Physiotherapy Right for You?</h2>
+            <p>Home physiotherapy is the ideal choice if you or your loved ones are recovering from surgery (e.g., knee/hip replacement), managing limited mobility, recovering from a stroke, or simply looking to save time and travel stress. At mcecare, our certified, SCFHS-licensed physiotherapists provide personalized treatment directly in your home, supporting your path to recovery with professionalism and respect.</p>
           </div>
-          <div class="value-card stagger-item">
-            <h3 style="color: var(--teal-deep); margin-bottom: 12px;" data-i18n="value_punctuality_title">Punctuality</h3>
-            <p data-i18n="value_punctuality_desc">Time is critical in healthcare; our professionals arrive as scheduled.</p>
+
+          <!-- Arabic Content -->
+          <div class="lang-ar">
+            <p>إن التعافي من عملية جراحية كبرى، أو التعامل مع آلام مزمنة، أو دعم أحد أفراد الأسرة الذين يعانون من صعوبة في الحركة قد يمثل تحدياً كبيراً. في هذه الأوقات، تكون إعادة التأهيل البدني هي المفتاح لاستعادة الصحة. ومع ذلك، يظل هناك قرار هام يجب اتخاذه: هل يجب عليك الانتقال لزيارة عيادة العلاج الطبيعي أم اختيار الرعاية المنزلية؟</p>
+            
+            <p>على الرغم من انتشار العيادات، فقد ظهر العلاج الطبيعي المنزلي كبديل متميز وفعال للغاية. نستعرض فيما يلي متى يتعين عليك التفكير في العلاج الطبيعي بالمنزل وكيف يقارن بجلسات العيادات التقليدية.</p>
+            
+            <h2>١. الراحة والسلامة في منزلك الخاص</h2>
+            <p>قد تبدو بيئة العيادة أحياناً رسمية أو تسبب القلق لبعض المرضى. أما في المنزل، فإنك تمارس تمارينك البدنية في نفس المكان الذي تتحرك فيه يومياً، مما يساعد بشكل مباشر في التعافي الوظيفي والعملي، مثل التدريب على كيفية الجلوس، صعود الدرج، أو الحركة بأمان داخل المطبخ وغرفة المعيشة.</p>
+            <blockquote>"تكون عملية إعادة التأهيل أكثر نجاحاً عندما تتناسب بسلاسة مع البيئة اليومية للمريض وعاداته المنزلية."</blockquote>
+            
+            <h2>٢. رعاية فردية مخصصة بالكامل (١ لـ ١)</h2>
+            <p>في العديد من عيادات العلاج الطبيعي، قد يوزع الأخصائي اهتمامه على أكثر من مريض في نفس الوقت. أما مع الرعاية المنزلية، يركز المعالج بالكامل معك طوال فترة الجلسة (من ٤٥ إلى ٦٠ دقيقة)، مما يمنحك انتباهاً كاملاً ورعاية مخصصة تسهم في تحقيق نتائج أسرع.</p>
+            
+            <h2>٣. التخلص من مشقة وإرهاق السفر والتنقل</h2>
+            <p>قد يكون الانتقال عبر شوارع جدة المزدحمة للوصول للعيادة أمراً مرهقاً ومؤلماً للمرضى، خصوصاً لمن يتعافى حديثاً من جراحة كبرى أو يعاني من آلام مفاصل حادة. في الواقع، قد يزيد التنقل من التورم والألم، مما يقلل من فائدة الجلسة العلاجية نفسها. الزيارة المنزلية تلغي هذه المشقة تماماً.</p>
+            
+            <h2>خلاصة: هل العلاج الطبيعي المنزلي هو الخيار المناسب لك؟</h2>
+            <p>يعد العلاج الطبيعي بالمنزل الخيار الأمثل والأنسب لك أو لعائلتك إذا كنت في فترة التعافي بعد جراحة (مثل استبدال مفصل الركبة أو الورك)، أو تعاني من صعوبة الحركة، أو تتعافى من السكتة الدماغية، أو ترغب ببساطة في توفير الوقت وتفادي عناء التنقل. في الرعاية الطبية، يقدم أخصائيونا المعتمدون والمرخصون من الهيئة السعودية للتخصصات الصحية برامج علاجية مخصصة تأتيك مباشرة إلى باب منزلك بكل خصوصية ومهنية.</p>
           </div>
-          <div class="value-card stagger-item">
-            <h3 style="color: var(--teal-deep); margin-bottom: 12px;" data-i18n="value_safety_title">Patient Safety</h3>
-            <p data-i18n="value_safety_desc">Strict medical protocols and verified licensed healthcare practitioners.</p>
+
+          <!-- Social Sharing Section -->
+          <div class="share-section">
+            <h4 class="share-title lang-en">Share this Article:</h4>
+            <h4 class="share-title lang-ar">شارك هذا المقال:</h4>
+            <div class="share-buttons">
+              <a href="#" class="share-btn share-whatsapp" target="_blank" aria-label="Share on WhatsApp" title="WhatsApp">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.488 2.01 14.07 1.01 11.993 1.01c-5.438 0-9.865 4.37-9.87 9.8-.001 1.774.475 3.508 1.378 5.07l-.988 3.606 3.733-.967zm12.35-6.096c-.302-.15-1.785-.875-2.057-.974-.272-.099-.47-.149-.668.15-.198.297-.768.974-.941 1.173-.173.198-.347.223-.65.073-.302-.15-1.277-.468-2.433-1.493-.898-.797-1.503-1.783-1.68-2.08-.178-.299-.019-.462.13-.61.135-.133.303-.347.454-.52.152-.174.202-.298.303-.497.102-.198.05-.371-.025-.52-.075-.15-.668-1.597-.914-2.202-.241-.593-.484-.509-.668-.518-.172-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.785-.719 2.034-1.411.25-.693.25-1.287.175-1.411-.074-.124-.272-.198-.57-.348z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-twitter" target="_blank" aria-label="Share on X" title="X (Twitter)">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-facebook" target="_blank" aria-label="Share on Facebook" title="Facebook">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h2.72l.42-3H12V6c0-.9.27-1.5 1.54-1.5H15V2c-.52-.07-2.31-.2-4.4-.2C6.22 1.8 3.5 4.47 3.5 9v1H2v3h1.5V20H7v-9h2V8z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-linkedin" target="_blank" aria-label="Share on LinkedIn" title="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <button class="share-btn share-copy" onclick="copyLink()" aria-label="Copy Link" title="Copy Link">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+            <div id="copy-toast" class="copy-toast">
+              <span class="lang-en">Link copied to clipboard!</span>
+              <span class="lang-ar">تم نسخ رابط المقال!</span>
+            </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </article>
 
-    <!-- CLINICAL SAFETY STANDARDS -->
-    <section class="container section-padding reveal">
-      <div class="about-grid">
-        <div class="photo-frame">
-          <img src="Public/clinical_safety.png" alt="Sterile clinical equipment" loading="lazy">
+    <!-- SECTION CTA -->
+    <section class="section-cta container section-padding reveal">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title" data-i18n="cta_title">Ready to bring care home?</h2>
+          <p class="cta-desc" data-i18n="cta_desc">Schedule your same-day home appointment with Jeddah's most trusted home healthcare network.</p>
+          <div class="cta-actions">
+            <button class="btn btn-primary open-modal-btn" data-i18n="btn_book">Book a Home Visit</button>
+            <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary" style="color:var(--white); border-color:var(--white);" data-i18n="btn_call">Call Us</a>
+          </div>
         </div>
-        <div>
-          <span class="hero-eyebrow" data-i18n="about_safety_eyebrow">Patient Safety First</span>
-          <h2 class="section-title" style="margin-top: 12px; margin-bottom: 20px;" data-i18n="about_safety_title">Our Clinical Safety Protocols</h2>
-          <p style="margin-bottom: 16px;" data-i18n="about_safety_desc">We enforce strict healthcare protocols to protect you and your loved ones during every home visit. From sanitization to continuous monitoring, safety is our top priority.</p>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-            <li style="display: flex; align-items: flex-start; gap: 10px;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" style="flex-shrink:0; margin-top:3px;"><polyline points="20 6 9 17 4 12"/></svg>
-              <span data-i18n="about_safety_pt1">100% sterilized medical kits for every session.</span>
-            </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" style="flex-shrink:0; margin-top:3px;"><polyline points="20 6 9 17 4 12"/></svg>
-              <span data-i18n="about_safety_pt2">Continuous oversight by senior general physicians.</span>
-            </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" style="flex-shrink:0; margin-top:3px;"><polyline points="20 6 9 17 4 12"/></svg>
-              <span data-i18n="about_safety_pt3">Full background, identity, and licensing checks for all staff.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- COVERAGE AREA -->
-    <section class="how-section section-padding reveal">
-      <div class="container" style="text-align: center;">
-        <div class="section-header">
-          <span class="section-eyebrow" data-i18n="hero_stat_cities_lbl">Coverage</span>
-          <h2 class="section-title" data-i18n="about_coverage_title">Jeddah Coverage Areas</h2>
-        </div>
-        <p style="max-width: 600px; margin: 0 auto 30px auto;" data-i18n="about_coverage_desc">We currently serve families across all major districts of Jeddah, including Al-Sharafeyah, Al-Hamra, Al-Safa, Al-Naeem, Al-Rawdah, and Al-Balad.</p>
-        <button class="btn btn-primary open-modal-btn" data-i18n="btn_book">Book Now</button>
       </div>
     </section>
 
@@ -189,10 +347,13 @@
   <footer class="footer" role="contentinfo">
     <div class="container footer-grid">
       <div class="footer-col">
-        <div class="footer-logo">
-          <span class="footer-logo-text">mcecare</span>
-          <span class="footer-logo-arabic">الرعاية الطبية</span>
-        </div>
+        <a href="index.html" class="logo" style="margin-bottom: 20px;">
+          <img src="Public/presentlogo.png" alt="mcecare Logo" class="logo-img">
+          <span class="logo-text">
+            <span class="logo-text-en" style="color: var(--teal-deep);">mcecare</span>
+            <span class="logo-arabic" style="color: var(--teal-deep);">الرعاية الطبية</span>
+          </span>
+        </a>
         <p class="footer-blurb" data-i18n="footer_blurb">Providing Saudi families with certified and compassionate home healthcare services directly at their doorstep. Your safety, choice, and recovery are our primary goals.</p>
       </div>
       <div class="footer-col">
@@ -201,7 +362,7 @@
           <li><a href="services.html" class="footer-link" data-i18n="service_1_title">Physiotherapy at Home</a></li>
           <li><a href="services.html" class="footer-link" data-i18n="service_2_title">Home Lab Tests</a></li>
           <li><a href="services.html" class="footer-link" data-i18n="service_3_title">Home Consultation</a></li>
-          <li><a href="services.html" class="footer-link" data-i18n="service_4_title">Home Caretaker</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_4_title">Home Nursing & Caregiver</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -225,7 +386,7 @@
         <div class="footer-contact-item">
           <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <div>
-            <div class="stat-label" data-i18n="footer_email_lbl">Email Support</div>
+            <div class="stat-label" data-i18n="footer_phone_lbl">Email Support</div>
             <a href="mailto:contactus@mcecare.com">contactus@mcecare.com</a>
           </div>
         </div>
@@ -367,6 +528,29 @@
     </div>
   </div>
 
+  <!-- Unified JS -->
   <script src="js/app.js?v=2"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const url = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      
+      document.querySelectorAll('.share-whatsapp').forEach(el => el.href = `https://api.whatsapp.com/send?text=${title}%20${url}`);
+      document.querySelectorAll('.share-twitter').forEach(el => el.href = `https://twitter.com/intent/tweet?text=${title}&url=${url}`);
+      document.querySelectorAll('.share-facebook').forEach(el => el.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`);
+      document.querySelectorAll('.share-linkedin').forEach(el => el.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`);
+    });
+
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.style.display = 'block';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 2000);
+      });
+    }
+  </script>
 </body>
 </html>

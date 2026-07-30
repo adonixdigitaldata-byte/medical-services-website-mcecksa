@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ar" data-lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Basic SEO -->
+  <title>Caring for Elderly Parents at Home: A Saudi Family's Guide | mcecare</title>
+  <meta name="description" content="A comprehensive guide for Saudi families on caring for elderly parents at home, highlighting safety home setups, nursing care, and professional caregiver services in Jeddah.">
+  
+  <!-- Inline Script to Prevent FOUC -->
+  <script>
+    (function() {
+      const savedLang = localStorage.getItem('preferred-lang') || 'ar';
+      document.documentElement.setAttribute('lang', savedLang);
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Public/fav.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <style>
+    /* Language Toggle Visibility styling */
+    html[lang="en"] .lang-ar { display: none !important; }
+    html[lang="ar"] .lang-en { display: none !important; }
+
+    .blog-detail-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      background-color: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+    .blog-content {
+      font-family: var(--font-body);
+      color: var(--ink);
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    .blog-content h2, .blog-content h3 {
+      font-family: var(--font-display);
+      color: var(--teal-deep);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .blog-content p {
+      margin-bottom: 1.5rem;
+    }
+    .blog-content ul {
+      margin-bottom: 1.5rem;
+      padding-inline-start: 24px;
+    }
+    .blog-content li {
+      margin-bottom: 0.5rem;
+    }
+    .blog-content blockquote {
+      border-inline-start: 4px solid var(--gold);
+      padding: 15px 24px;
+      margin: 2.5rem 0;
+      font-style: italic;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      color: var(--ink-soft);
+    }
+    .share-section {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--bg-alt);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .share-title {
+      font-family: var(--font-display);
+      color: var(--teal-deep);
+      font-size: 1.25rem;
+      margin: 0;
+    }
+    .share-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-pill);
+      background-color: var(--bg);
+      color: var(--teal);
+      transition: var(--transition-fast);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .share-btn:hover {
+      background-color: var(--teal);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    .copy-toast {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--teal-deep);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      z-index: 1000;
+      box-shadow: var(--shadow-md);
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, 10px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+    .blog-hero-header {
+      background-color: var(--teal-deep);
+      color: var(--white);
+      padding: 100px 24px 140px 24px;
+      text-align: center;
+    }
+    .blog-hero-header .badge-gold {
+      background-color: var(--gold);
+      color: var(--white);
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .blog-hero-header h1 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+    .blog-hero-meta {
+      font-size: 0.95rem;
+      color: var(--gold-light);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" aria-label="Loading Website" role="status" aria-live="polite">
+    <div class="preloader-content">
+      <img src="Public/presentlogo.png" alt="mcecare Logo" class="preloader-logo">
+      <div class="preloader-spinner-container">
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="mcecare Home Page">
+        <img src="Public/presentlogo.png" alt="mcecare Logo" class="logo-img">
+        <span class="logo-text">
+          <span class="logo-text-en">mcecare</span>
+          <span class="logo-arabic">الرعاية الطبية</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Desktop Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
+        <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="blogs.html" class="nav-link" data-i18n="nav_blogs">Blogs & FAQ</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a>
+      </nav>
+
+      <div class="header-actions-group">
+        <div class="lang-toggle-pill" role="group" aria-label="Language selection">
+          <button id="lang-btn-en" class="lang-toggle-btn" aria-label="Switch to English">EN</button>
+          <button id="lang-btn-ar" class="lang-toggle-btn active" aria-label="Switch to Arabic">عربي</button>
+        </div>
+        <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary header-cta-phone" aria-label="Call support line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="display:inline-block; vertical-align: middle; margin-inline-end: 8px;">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span data-i18n="btn_call">Call Us</span>
+        </a>
+        <button class="btn btn-primary header-cta open-modal-btn" data-i18n="btn_book">Book Now</button>
+        <button id="nav-toggle-btn" class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation menu -->
+  <div class="nav-mobile-overlay" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <button id="nav-close-btn" class="nav-mobile-close" aria-label="Close navigation menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <a href="index.html" class="nav-link mobile-nav-item" data-i18n="nav_home">Home</a>
+    <a href="about.html" class="nav-link mobile-nav-item" data-i18n="nav_about">About Us</a>
+    <a href="services.html" class="nav-link mobile-nav-item" data-i18n="nav_services">Services</a>
+    <a href="blogs.html" class="nav-link mobile-nav-item" data-i18n="nav_blogs">Blogs & FAQ</a>
+    <a href="contact.html" class="nav-link mobile-nav-item" data-i18n="nav_contact">Contact Us</a>
+    <button class="btn btn-primary open-modal-btn mobile-nav-item" style="width: 100%; max-width: 280px; margin-top: 16px;" data-i18n="btn_book">Book Now</button>
+  </div>
+
+  <main role="main">
+    
+    <!-- BLOG HERO HEADER -->
+    <section class="blog-hero-header">
+      <div class="container">
+        <span class="badge-gold lang-en">Elderly Care</span>
+        <span class="badge-gold lang-ar">رعاية كبار السن</span>
+        
+        <h1 class="lang-en">Caring for Elderly Parents at Home: A Saudi Family's Guide</h1>
+        <h1 class="lang-ar">رعاية الوالدين المسنين في المنزل: دليل الأسرة السعودية</h1>
+        
+        <div class="blog-hero-meta">
+          <span>7 <span data-i18n="read_time">min read</span></span>
+          <span>&bull;</span>
+          <span class="lang-en">By mcecare Care Team</span>
+          <span class="lang-ar">بواسطة فريق رعاية الرعاية الطبية</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG DETAIL CONTAINER -->
+    <article class="container">
+      <div class="blog-detail-container">
+        <div class="blog-content">
+          
+          <!-- English Content -->
+          <div class="lang-en">
+            <p>In Saudi Arabian culture, honoring and caring for our elderly parents is not just a social duty—it is a core value rooted in love, respect, and family solidarity. Keeping our aging mothers and fathers comfortable at home is a priority for most families in Jeddah. However, as medical needs grow, providing adequate support can become complex.</p>
+            
+            <p>To help you navigate this transition, we've compiled a practical guide on home safety adjustments, physical care, and when to seek professional assistance.</p>
+            
+            <h2>1. Creating a Safe Home Environment</h2>
+            <p>Most falls among the elderly occur at home. Simple adjustments can drastically improve your parents' safety and mobility:</p>
+            <ul>
+              <li><strong>Clear Pathways:</strong> Remove loose rugs, electrical cords, and low furniture to prevent tripping.</li>
+              <li><strong>Bathroom Upgrades:</strong> Install sturdy grab bars next to the toilet and shower, and use non-slip mats.</li>
+              <li><strong>Better Lighting:</strong> Ensure hallways, bedrooms, and bathrooms are well-lit, especially for night trips.</li>
+              <li><strong>Accessibility:</strong> Keep essential items at waist level so parents don't need to bend or stretch excessively.</li>
+            </ul>
+            
+            <h2>2. Maintaining Social and Cognitive Engagement</h2>
+            <p>Physical health is only one part of the equation; mental and emotional well-being are equally vital. In Saudi households, family gatherings and shared meals are wonderful opportunities to keep elderly parents active. Encourage them to participate in conversations, share family history, and stay connected with grandchildren, which significantly boosts their cognitive health and emotional security.</p>
+            <blockquote>"A supportive, loving family environment combined with professional clinical safety is the ultimate recipe for healthy aging."</blockquote>
+            
+            <h2>3. Integrating Professional Caregivers</h2>
+            <p>Caring for an elderly parent while managing work and your own children can lead to caregiver burnout. Hiring a professional, licensed caregiver or home nurse does not mean delegating your duty; rather, it ensures your parent receives specialized medical attention, such as:</p>
+            <ul>
+              <li>Professional medication management and vitals monitoring.</li>
+              <li>Clinical support for wound dressing, injections, or fluid management.</li>
+              <li>Assistance with daily activities (bathing, feeding, grooming) with dignity and respect.</li>
+            </ul>
+            
+            <h2>Conclusion</h2>
+            <p>Caring for elderly parents at home allows them to spend their golden years surrounded by those who love them. By implementing home safety measures and partnering with licensed healthcare professionals, you can ensure they receive both the respect of family care and the safety of clinical expertise. At mcecare, we provide compassionate, SCFHS-certified home nurses and caregivers in Jeddah, tailored to your family's unique needs.</p>
+          </div>
+
+          <!-- Arabic Content -->
+          <div class="lang-ar">
+            <p>في المجتمع السعودي، لا يعتبر بر الوالدين ورعايتهما مجرد واجب اجتماعي، بل هو قيمة أصيلة متجذرة في الحب والتقدير والتضامن الأسري. إن إبقاء أمهاتنا وآبائنا المسنين مرتاحين وبصحة جيدة في منازلهم هو أولوية قصوى لمعظم العائلات في جدة. ومع ذلك، مع زيادة الاحتياجات الطبية، قد يصبح تقديم الدعم الكافي أمراً يحتاج إلى ترتيب وتنظيم.</p>
+            
+            <p>ولمساعدتك في هذه المرحلة الانتقالية، قمنا بإعداد دليل عملي يركز على تعديلات السلامة المنزلية، الرعاية البدنية، ومتى يجب الاستعانة بمقدمي الرعاية المحترفين.</p>
+            
+            <h2>١. تهيئة بيئة منزلية آمنة</h2>
+            <p>تحدث معظم حالات السقوط لدى كبار السن داخل المنزل. يمكن لبعض التعديلات البسيطة أن تسهم بشكل كبير في حماية والديك وتحسين حركتهم:</p>
+            <ul>
+              <li><strong>إخلاء الممرات:</strong> إزالة السجاد الصغير القابل للانزلاق، والأسلاك الكهربائية، وقطع الأثاث المنخفضة لتجنب التعثر.</li>
+              <li><strong>تجهيز دورات المياه:</strong> تركيب مقابض جدارية متينة بجوار المرحاض ومكان الاستحمام، واستخدام سجاد مطاطي مانع للانزلاق.</li>
+              <li><strong>تحسين الإضاءة:</strong> التأكد من إضاءة الممرات وغرف النوم ودورات المياه بشكل كافٍ ومناسب، خاصة خلال ساعات الليل.</li>
+              <li><strong>سهولة الوصول:</strong> وضع الأغراض الأساسية واليومية في مستويات متوسطة الارتفاع لتجنيب كبار السن الانحناء أو التمدد الزائد.</li>
+            </ul>
+            
+            <h2>٢. تعزيز التواصل الاجتماعي والنشاط الذهني</h2>
+            <p>الصحة البدنية هي جزء واحد فقط من الرعاية؛ فالصحة النفسية والعاطفية لا تقل أهمية. في البيوت السعودية، تعد التجمعات العائلية ووجبات الطعام المشتركة فرصاً رائعة لإبقاء الوالدين في حالة تفاعل دائم. شجعهم على المشاركة في الأحاديث العائلية، رواية القصص التاريخية، والتواصل المستمر مع الأحفاد، مما يعزز بشكل كبير قواهم الذهنية وشعورهم بالأمان والاستقرار.</p>
+            <blockquote>"البيئة الأسرية المحبة والداعمة، جنباً إلى جنب مع الرعاية الطبية الاحترافية، هي المعادلة المثالية لشيخوخة صحية وآمنة."</blockquote>
+            
+            <h2>٣. الاستعانة بمرافق رعاية منزلي محترف</h2>
+            <p>قد تؤدي رعاية والدين مسنين إلى إرهاق أفراد الأسرة، خاصة مع التوفيق بين العمل والمسؤوليات الشخصية والأبناء. إن الاستعانة بممرض منزلي أو مرافق رعاية مرخص لا يعني التخلي عن واجبك، بل يضمن حصول والديك على رعاية متخصصة ودقيقة تشمل:</p>
+            <ul>
+              <li>المتابعة الدقيقة لمواعيد الأدوية وجرعاتها ومراقبة العلامات الحيوية.</li>
+              <li>الرعاية السريرية مثل غيار الجروح، إعطاء الحقن، ومتابعة المحاليل.</li>
+              <li>المساعدة في الأنشطة اليومية (مثل الاستحمام، تبديل الملابس، وتناول الطعام) بكل احترام وصون لكرامتهم.</li>
+            </ul>
+            
+            <h2>خلاصة</h2>
+            <p>إن رعاية الوالدين المسنين في المنزل تتيح لهما قضاء سنوات عمرهما الذهبية محاطين بمن يحبونهم. من خلال تطبيق تدابير السلامة المنزلية والتعاون مع متخصصي الرعاية الصحية المرخصين، يمكنك ضمان حصولهم على رعاية عائلية دافئة وخدمة طبية احترافية وآمنة في آن واحد. تقدم الرعاية الطبية خدمات تمريض ومرافقة منزلية معتمدة من الهيئة السعودية للتخصصات الصحية بجدة، لتلبية احتياجات عائلتك بكل أمان وخصوصية.</p>
+          </div>
+
+          <!-- Social Sharing Section -->
+          <div class="share-section">
+            <h4 class="share-title lang-en">Share this Article:</h4>
+            <h4 class="share-title lang-ar">شارك هذا المقال:</h4>
+            <div class="share-buttons">
+              <a href="#" class="share-btn share-whatsapp" target="_blank" aria-label="Share on WhatsApp" title="WhatsApp">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.488 2.01 14.07 1.01 11.993 1.01c-5.438 0-9.865 4.37-9.87 9.8-.001 1.774.475 3.508 1.378 5.07l-.988 3.606 3.733-.967zm12.35-6.096c-.302-.15-1.785-.875-2.057-.974-.272-.099-.47-.149-.668.15-.198.297-.768.974-.941 1.173-.173.198-.347.223-.65.073-.302-.15-1.277-.468-2.433-1.493-.898-.797-1.503-1.783-1.68-2.08-.178-.299-.019-.462.13-.61.135-.133.303-.347.454-.52.152-.174.202-.298.303-.497.102-.198.05-.371-.025-.52-.075-.15-.668-1.597-.914-2.202-.241-.593-.484-.509-.668-.518-.172-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.785-.719 2.034-1.411.25-.693.25-1.287.175-1.411-.074-.124-.272-.198-.57-.348z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-twitter" target="_blank" aria-label="Share on X" title="X (Twitter)">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-facebook" target="_blank" aria-label="Share on Facebook" title="Facebook">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h2.72l.42-3H12V6c0-.9.27-1.5 1.54-1.5H15V2c-.52-.07-2.31-.2-4.4-.2C6.22 1.8 3.5 4.47 3.5 9v1H2v3h1.5V20H7v-9h2V8z"/></svg>
+              </a>
+              <a href="#" class="share-btn share-linkedin" target="_blank" aria-label="Share on LinkedIn" title="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <button class="share-btn share-copy" onclick="copyLink()" aria-label="Copy Link" title="Copy Link">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+            <div id="copy-toast" class="copy-toast">
+              <span class="lang-en">Link copied to clipboard!</span>
+              <span class="lang-ar">تم نسخ رابط المقال!</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION CTA -->
+    <section class="section-cta container section-padding reveal">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title" data-i18n="cta_title">Ready to bring care home?</h2>
+          <p class="cta-desc" data-i18n="cta_desc">Schedule your same-day home appointment with Jeddah's most trusted home healthcare network.</p>
+          <div class="cta-actions">
+            <button class="btn btn-primary open-modal-btn" data-i18n="btn_book">Book a Home Visit</button>
+            <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary" style="color:var(--white); border-color:var(--white);" data-i18n="btn_call">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 20px;">
+          <img src="Public/presentlogo.png" alt="mcecare Logo" class="logo-img">
+          <span class="logo-text">
+            <span class="logo-text-en" style="color: var(--teal-deep);">mcecare</span>
+            <span class="logo-arabic" style="color: var(--teal-deep);">الرعاية الطبية</span>
+          </span>
+        </a>
+        <p class="footer-blurb" data-i18n="footer_blurb">Providing Saudi families with certified and compassionate home healthcare services directly at their doorstep. Your safety, choice, and recovery are our primary goals.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_services">Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link" data-i18n="service_1_title">Physiotherapy at Home</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_2_title">Home Lab Tests</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_3_title">Home Consultation</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="service_4_title">Home Nursing & Caregiver</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_company">Company</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" class="footer-link" data-i18n="nav_about">About Us</a></li>
+          <li><a href="blogs.html" class="footer-link" data-i18n="nav_blogs">Blogs & FAQ</a></li>
+          <li><a href="contact.html" class="footer-link" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer_title_contact">Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <div class="stat-label" data-i18n="footer_phone_lbl">Phone Support</div>
+            <a href="tel:PHONE_PLACEHOLDER" class="phone-number">+966 54 113 4385</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <div class="stat-label" data-i18n="footer_phone_lbl">Email Support</div>
+            <a href="mailto:contactus@mcecare.com">contactus@mcecare.com</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <address style="font-style: normal; font-size: 0.85rem;" data-i18n="footer_address">
+              506, 5th Floor, Advanced Business Center, Sharafiya, Khaled Ibn Al Walid, Al Sharafeyah, Jeddah, KSA
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-i18n="footer_copyright">Copyright © 2026 Medical Care. All rights reserved. Serving Jeddah.</p>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="sticky-mobile-bar" role="complementary" aria-label="Quick Actions">
+    <div class="sticky-mobile-bar-container">
+      <a href="#" class="btn btn-gold whatsapp-general-link" data-i18n="btn_book">Book Now</a>
+      <a href="tel:PHONE_PLACEHOLDER" class="btn btn-secondary" style="color:var(--white); border-color:var(--white);" data-i18n="btn_call">Call Now</a>
+    </div>
+  </div>
+
+  <!-- STACKED FLOATING CTAS -->
+  <div class="floating-ctas-container">
+    <a href="tel:PHONE_PLACEHOLDER" class="call-float" aria-label="Call mcecare support team">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <!-- Premium WhatsApp Chat Widget -->
+  <div id="whatsapp-widget" class="wa-widget-container">
+    <button id="wa-widget-btn" class="wa-widget-toggle" aria-label="Open WhatsApp Chat">
+      <span class="wa-widget-badge">1</span>
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.458 3.473 1.332 4.988L2 22l5.176-1.357c1.467.8 3.12 1.22 4.826 1.22l.012.001c5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm6.262 14.281c-.256.725-1.488 1.32-2.031 1.394-.488.066-1.125.138-3.238-.737-2.693-1.116-4.431-3.86-4.569-4.043-.131-.188-1.075-1.438-1.075-2.738 0-1.306.675-1.944.919-2.2.206-.219.544-.331.875-.331.112 0 .212.006.3.012.262.012.394.031.569.45.219.525.75 1.831.812 1.962.062.131.106.281.019.456-.088.175-.162.281-.319.462-.156.181-.331.406-.475.544-.162.156-.331.325-.144.65.188.319.831 1.369 1.781 2.219.144.131.25.162.394.212.188.062.375.05.519-.012.144-.062.619-.719.787-.962.169-.244.338-.2.569-.112.231.088 1.469.694 1.719.819.25.125.419.188.481.294.063.106.063.613-.193 1.338z"/></svg>
+      <span class="wa-btn-text" data-i18n="wa_chat_btn">Chat with us</span>
+    </button>
+    
+    <div id="wa-chat-window" class="wa-chat-card">
+      <div class="wa-chat-header">
+        <div class="wa-chat-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="wa-online-dot"></span>
+        </div>
+        <div class="wa-chat-header-info">
+          <div class="wa-chat-name">mcecare Support</div>
+          <div class="wa-chat-status" data-i18n="wa_online_status">Typically replies in minutes</div>
+        </div>
+        <button id="wa-chat-close" class="wa-chat-close-btn" aria-label="Close Chat Window">&times;</button>
+      </div>
+      
+      <div class="wa-chat-body">
+        <div class="wa-chat-bubble">
+          <div class="wa-chat-sender">mcecare Coordinator</div>
+          <div class="wa-chat-message" data-i18n="wa_welcome_msg">Hello! How can we help you today with your home healthcare booking?</div>
+          <div class="wa-chat-time">Just now</div>
+        </div>
+      </div>
+      
+      <div class="wa-chat-footer">
+        <a href="#" class="btn btn-primary wa-start-chat-btn whatsapp-general-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="display:inline-block; margin-inline-end: 8px; vertical-align: middle;"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.458 3.473 1.332 4.988L2 22l5.176-1.357c1.467.8 3.12 1.22 4.826 1.22l.012.001c5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm6.262 14.281c-.256.725-1.488 1.32-2.031 1.394-.488.066-1.125.138-3.238-.737-2.693-1.116-4.431-3.86-4.569-4.043-.131-.188-1.075-1.438-1.075-2.738 0-1.306.675-1.944.919-2.2.206-.219.544-.331.875-.331.112 0 .212.006.3.012.262.012.394.031.569.45.219.525.75 1.831.812 1.962.062.131.106.281.019.456-.088.175-.162.281-.319.462-.156.181-.331.406-.475.544-.162.156-.331.325-.144.65.188.319.831 1.369 1.781 2.219.144.131.25.162.394.212.188.062.375.05.519-.012.144-.062.619-.719.787-.962.169-.244.338-.2.569-.112.231.088 1.469.694 1.719.819.25.125.419.188.481.294.063.106.063.613-.193 1.338z"/></svg>
+          <span data-i18n="wa_start_chat">Start Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING LEAD MODAL -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card" role="document">
+      <button id="modal-close-btn" class="modal-close" aria-label="Close booking modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+      </button>
+      <div id="modal-form-content">
+        <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Book a Home Visit</h2>
+        <p class="modal-desc" data-i18n="modal_desc">Fill in the form to notify our medical coordinator and start your booking process.</p>
+        <form id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-name" data-i18n="form_name_lbl">Full Name *</label>
+              <input type="text" id="booking-name" name="name" class="form-input" data-i18n="form_name_placeholder" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-phone" data-i18n="form_phone_lbl">Phone Number (Saudi Arabia) *</label>
+              <input type="tel" id="booking-phone" name="phone" class="form-input" data-i18n="form_phone_placeholder" required aria-required="true">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-service" data-i18n="form_service_lbl">Select Service *</label>
+              <select id="booking-service" name="service" class="form-select" required aria-required="true">
+                <option value="" disabled selected data-i18n="form_service_placeholder">Choose a service</option>
+                <option value="Home Caregiver" data-i18n="service_4_title">Home Caregiver</option>
+                <option value="Physiotherapy" data-i18n="service_1_title">Physiotherapy at Home</option>
+                <option value="Home Lab Tests" data-i18n="service_2_title">Home Lab Tests</option>
+                <option value="Home Consultation" data-i18n="service_3_title">Home Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-gender" data-i18n="form_gender_lbl">Provider Gender Preference</label>
+              <select id="booking-gender" name="gender_preference" class="form-select">
+                <option value="None" data-i18n="form_gender_opt_none">No Preference</option>
+                <option value="Female" data-i18n="form_gender_opt_female">Female Practitioner</option>
+                <option value="Male" data-i18n="form_gender_opt_male">Male Practitioner</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-city" data-i18n="form_city_lbl">City *</label>
+              <select id="booking-city" name="city" class="form-select" required aria-required="true">
+                <option value="" disabled selected data-i18n="form_city_placeholder">Select your city</option>
+                <option value="Jeddah" data-i18n="Jeddah">Jeddah</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-date" data-i18n="form_date_lbl">Preferred Date</label>
+              <input type="date" id="booking-date" name="preferred_date" class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="booking-message" data-i18n="form_msg_lbl">Your Message</label>
+            <textarea id="booking-message" name="message" class="form-textarea" data-i18n="form_msg_placeholder"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary modal-submit-btn" data-i18n="form_submit">Confirm Booking</button>
+        </form>
+      </div>
+      <div id="modal-success-content" class="modal-success-content" role="status" aria-live="polite">
+        <div class="success-icon-wrapper">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h2 class="success-title" data-i18n="success_title">Request Received</h2>
+        <p id="success-desc-render" class="success-desc" data-i18n="success_desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unified JS -->
+  <script src="js/app.js?v=2"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const url = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      
+      document.querySelectorAll('.share-whatsapp').forEach(el => el.href = `https://api.whatsapp.com/send?text=${title}%20${url}`);
+      document.querySelectorAll('.share-twitter').forEach(el => el.href = `https://twitter.com/intent/tweet?text=${title}&url=${url}`);
+      document.querySelectorAll('.share-facebook').forEach(el => el.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`);
+      document.querySelectorAll('.share-linkedin').forEach(el => el.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`);
+    });
+
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.style.display = 'block';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
