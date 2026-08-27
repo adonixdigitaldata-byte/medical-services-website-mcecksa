@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="grad-7101" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A1525" />
+      <stop offset="100%" stop-color="#240710" />
+    </linearGradient>
+    <linearGradient id="accent-7101" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2B155" />
+      <stop offset="100%" stop-color="#BE8A2E" />
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#grad-7101)" stroke="url(#accent-7101)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#E2B155" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="80" y="42" font-family="'IBM Plex Mono', 'Public Sans', sans-serif" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ISO</text>
+  <text x="80" y="78" font-family="'Public Sans', sans-serif" font-weight="900" font-size="28" fill="url(#accent-7101)" text-anchor="middle">7101</text>
+  <text x="80" y="98" font-family="'IBM Plex Mono', sans-serif" font-weight="600" font-size="14" fill="#FFFFFF" text-anchor="middle">:2023</text>
+  <rect x="22" y="112" width="116" height="22" rx="4" fill="url(#accent-7101)"/>
+  <text x="80" y="127" font-family="'Public Sans', sans-serif" font-weight="800" font-size="8.5" fill="#240710" text-anchor="middle" letter-spacing="0.5">HEALTHCARE QUALITY</text>
+</svg>

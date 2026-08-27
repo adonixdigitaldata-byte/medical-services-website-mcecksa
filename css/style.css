@@ -231,6 +231,36 @@ img, svg {
   letter-spacing: 0.05em;
 }
 
+.form-price-badge-preview {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: rgba(212, 175, 55, 0.1);
+  border: 1px dashed var(--gold);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: var(--teal-deep);
+  transition: all 0.25s ease-in-out;
+}
+
+.form-price-badge-preview.visible {
+  display: flex;
+  animation: fadeInPrice 0.3s ease-out;
+}
+
+.form-price-badge-preview .price-val {
+  color: var(--teal-deep);
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+@keyframes fadeInPrice {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .service-badges {
   display: flex;
   gap: 8px;
@@ -1449,6 +1479,90 @@ html[dir="rtl"] .highlight-item {
   color: rgba(255, 255, 255, 0.45);
 }
 
+.footer-iso-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-iso-label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-iso-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.iso-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 6px 16px 6px 8px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+html[dir="rtl"] .iso-badge-pill {
+  padding: 6px 8px 6px 16px;
+}
+
+.iso-badge-pill:hover {
+  background: rgba(190, 138, 46, 0.14);
+  border-color: rgba(190, 138, 46, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.iso-badge-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-fast);
+}
+
+.iso-badge-pill:hover .iso-badge-img {
+  transform: scale(1.12);
+}
+
+.iso-num {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  .footer-iso-bar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .footer-iso-badges {
+    justify-content: center;
+  }
+}
+
 .footer-bottom-compliance {
   background-color: rgba(190, 138, 46, 0.06);
   border: 1px dashed rgba(190, 138, 46, 0.25);
@@ -2412,3 +2526,138 @@ html[dir="rtl"] .contact-info-card {
   justify-content: center;
   flex-shrink: 0;
 }
+
+/* ----------------------------------------------------
+   ACCREDITATIONS & PARTNERS SECTION
+   ---------------------------------------------------- */
+.accreditations-section {
+  background: linear-gradient(180deg, rgba(15, 61, 62, 0.02) 0%, rgba(15, 61, 62, 0.06) 100%);
+  border-top: 1px solid rgba(15, 61, 62, 0.08);
+  border-bottom: 1px solid rgba(15, 61, 62, 0.08);
+  padding: 70px 0;
+}
+
+.accreditations-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.accreditations-subhead {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.accreditations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.accreditation-card {
+  background: var(--white);
+  border: 1px solid rgba(15, 61, 62, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.accreditation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.accreditation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(15, 61, 62, 0.12);
+  border-color: rgba(190, 138, 46, 0.3);
+}
+
+.accreditation-card:hover::before {
+  opacity: 1;
+}
+
+.accreditation-logo-wrapper {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.accreditation-logo {
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+  transition: transform var(--transition-fast);
+}
+
+.accreditation-card:hover .accreditation-logo {
+  transform: scale(1.05);
+}
+
+.accreditation-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--teal-deep);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.accreditation-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--teal);
+  background-color: rgba(15, 92, 78, 0.08);
+  border: 1px solid rgba(15, 92, 78, 0.15);
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  margin-top: auto;
+}
+
+@media (max-width: 992px) {
+  .accreditations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .accreditations-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .accreditation-card {
+    padding: 28px 20px;
+  }
+  .accreditation-logo-wrapper {
+    height: 75px;
+  }
+  .accreditation-logo {
+    max-height: 65px;
+  }
+}
+

@@ -53,6 +53,10 @@ const translations = {
     services_guarantee_1: "All providers are professional, compassionate, well-experienced, and fully licensed.",
     services_guarantee_2: "Strict medical hygiene and infection prevention protocols are adhered to at all times. Delivered directly at your doorstep.",
     price_from: "From 99 SAR",
+    price_caregiver: "From 150 SAR",
+    price_physio: "From 200 SAR",
+    price_consultation: "From 200 SAR",
+    price_lab: "From 99 SAR",
     
     how_eyebrow: "How it works",
     how_title: "From a phone call to care at your door.",
@@ -204,7 +208,19 @@ const translations = {
     wa_chat_btn: "Chat with us",
     wa_online_status: "Typically replies in minutes",
     wa_welcome_msg: "Hello! How can we help you today with your home healthcare booking?",
-    wa_start_chat: "Start Chat on WhatsApp"
+    wa_start_chat: "Start Chat on WhatsApp",
+    
+    // Accreditations
+    accreditation_eyebrow: "Official Licensing & Strategic Partners",
+    accreditation_title: "Accredited & Recognized by Saudi Authorities",
+    accreditation_desc: "MCE Care operates under strict compliance with Saudi health regulations, commercial standards, and business governance.",
+    logo_moh_title: "Ministry of Health",
+    badge_moh: "Licensed Care Provider",
+    logo_monshaat_title: "Monsha'at",
+    badge_monshaat: "Verified Enterprise",
+    logo_sbc_title: "Saudi Business Center",
+    badge_sbc: "Certified Business",
+    footer_iso_title: "ISO Certified Standards:"
   },
   ar: {
     nav_home: "الرئيسية",
@@ -254,6 +270,10 @@ const translations = {
     services_guarantee_1: "جميع مقدمي الخدمة محترفون، رحماء، ذوو خبرة عالية، ومترخصون بالكامل.",
     services_guarantee_2: "يتم الالتزام ببروتوكولات النظافة الطبية الصارمة والوقاية من العدوى في جميع الأوقات. مباشرة عند عتبة بابك.",
     price_from: "تبدأ من ٩٩ ر.س",
+    price_caregiver: "تبدأ من ١٥٠ ر.س",
+    price_physio: "تبدأ من ٢٠٠ ر.س",
+    price_consultation: "تبدأ من ٢٠٠ ر.س",
+    price_lab: "تبدأ من ٩٩ ر.س",
     
     how_eyebrow: "آلية العمل",
     how_title: "من مكالمة هاتفية إلى رعاية عند بابك.",
@@ -405,7 +425,19 @@ const translations = {
     wa_chat_btn: "راسلنا الآن",
     wa_online_status: "نشط حالياً - الرد خلال دقائق",
     wa_welcome_msg: "مرحباً! كيف يمكننا مساعدتك اليوم في حجز خدمات الرعاية الصحية المنزلية؟",
-    wa_start_chat: "بدء المحادثة على واتساب"
+    wa_start_chat: "بدء المحادثة على واتساب",
+
+    // Accreditations
+    accreditation_eyebrow: "التراخيص الرسمية والشركاء المعتمدون",
+    accreditation_title: "معتمدون ومسجلون لدى الجهات الحكومية بالمملكة",
+    accreditation_desc: "تعمل الرعاية الطبية وفق أعلى معايير الامتثال والاشتراطات المعتمدة من الجهات الصحية والتجارية بالمملكة العربية السعودية.",
+    logo_moh_title: "وزارة الصحة",
+    badge_moh: "منشأة صحية مرخصة",
+    logo_monshaat_title: "منشآت",
+    badge_monshaat: "منشأة معتمدة",
+    logo_sbc_title: "المركز السعودي للأعمال",
+    badge_sbc: "توثيق الأعمال الرسمي",
+    footer_iso_title: "معايير الجودة الأيزو المعتمدة:"
   }
 };
 
@@ -478,6 +510,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Add loaded class to body to prevent text flash
     htmlEl.classList.add('translations-loaded');
+
+    // Refresh dynamic form price previews for current language
+    const serviceSelects = document.querySelectorAll('select[name="service"]');
+    serviceSelects.forEach(select => {
+      if (typeof window.updateFormPriceDisplay === 'function') {
+        window.updateFormPriceDisplay(select);
+      }
+    });
   };
 
   // Check stored language
@@ -563,12 +603,38 @@ document.addEventListener('DOMContentLoaded', () => {
     link.setAttribute('href', `tel:${PHONE_NUMBER}`);
   });
 
-  const whatsappGeneralLinks = document.querySelectorAll('.whatsapp-general-link');
-  whatsappGeneralLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.open(getWhatsAppLink('generic'), '_blank');
-    });
+  // --- DYNAMIC FORM SERVICE PRICING LOGIC ---
+  const servicePriceMap = {
+    'Home Caregiver': { en: 'From 150 SAR', ar: 'تبدأ من ١٥٠ ر.س' },
+    'Physiotherapy': { en: 'From 200 SAR (1 hr)', ar: 'تبدأ من ٢٠٠ ر.س (ساعة واحدة)' },
+    'Home Lab Tests': { en: 'From 99 SAR', ar: 'تبدأ من ٩٩ ر.س' },
+    'Home Consultation': { en: 'From 200 SAR', ar: 'تبدأ من ٢٠٠ ر.س' }
+  };
+
+  window.updateFormPriceDisplay = function(selectElem) {
+    if (!selectElem) return;
+    const formGroup = selectElem.closest('.form-group') || selectElem.parentElement;
+    let badgeElem = formGroup.querySelector('.form-price-badge-preview');
+    const selectedVal = selectElem.value;
+    const currentLang = document.documentElement.getAttribute('lang') || 'ar';
+
+    if (selectedVal && servicePriceMap[selectedVal]) {
+      const priceText = servicePriceMap[selectedVal][currentLang] || servicePriceMap[selectedVal]['en'];
+      if (!badgeElem) {
+        badgeElem = document.createElement('div');
+        badgeElem.className = 'form-price-badge-preview';
+        formGroup.appendChild(badgeElem);
+      }
+      badgeElem.innerHTML = `<span class="price-icon">🏷️</span> <span class="price-label">${currentLang === 'ar' ? 'السعر التقديري:' : 'Estimated Price:'}</span> <strong class="price-val">${priceText}</strong>`;
+      badgeElem.classList.add('visible');
+    } else if (badgeElem) {
+      badgeElem.classList.remove('visible');
+    }
+  };
+
+  const serviceSelects = document.querySelectorAll('select[name="service"]');
+  serviceSelects.forEach(select => {
+    select.addEventListener('change', () => window.updateFormPriceDisplay(select));
   });
 
   // --- BOOKING MODAL LOGIC (GLOBAL TRIGGER) ---
@@ -583,7 +649,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastFocusedElement = null;
 
   if (modalOverlay) {
-    const openModal = () => {
+    const openModal = (e) => {
       lastFocusedElement = document.activeElement;
       modalOverlay.classList.add('active');
       modalOverlay.setAttribute('aria-hidden', 'false');
@@ -592,6 +658,18 @@ document.addEventListener('DOMContentLoaded', () => {
       if (bookingForm) bookingForm.reset();
       if (modalFormContent) modalFormContent.style.display = 'block';
       if (modalSuccessContent) modalSuccessContent.style.display = 'none';
+
+      const bookingServiceSelect = document.getElementById('booking-service');
+      if (e && e.currentTarget) {
+        const preselectedService = e.currentTarget.getAttribute('data-whatsapp-service');
+        if (preselectedService && bookingServiceSelect) {
+          bookingServiceSelect.value = preselectedService;
+        }
+      }
+
+      if (bookingServiceSelect) {
+        window.updateFormPriceDisplay(bookingServiceSelect);
+      }
 
       const focusableElements = modalOverlay.querySelectorAll('button, [href], input, select, textarea, [tabindex="0"]');
       const firstFocusable = focusableElements[0];
