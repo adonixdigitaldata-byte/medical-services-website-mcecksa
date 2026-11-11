@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow private and development directories
+Disallow: /.git/
+Disallow: /scratch/
+
+# Sitemap location
+Sitemap: https://mceccare.com/sitemap.xml

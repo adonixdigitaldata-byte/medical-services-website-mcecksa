@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
 const WHATSAPP_NUMBER = "966541134385"; // Replace with real WhatsApp Business number
-const WEB3FORMS_KEY = "YOUR_ACCESS_KEY_HERE"; // Replace with real Web3Forms access key
+const WEB3FORMS_KEY = "e92d4291-c67d-4799-99ff-a701efdf6720"; // Replace with real Web3Forms access key
 const PHONE_NUMBER = "+966541134385"; // Replace with real company phone number
 
 // --- TRANSLATIONS CATALOG ---
@@ -13,7 +13,7 @@ const translations = {
     nav_blogs: "Blogs & FAQ",
     btn_book: "Book a Home Visit",
     btn_call: "Call Us",
-    
+
     // Homepage content
     hero_eyebrow: "Serving Families Across Jeddah",
     hero_title: "The clinic, at <em>your</em> door.",
@@ -24,18 +24,18 @@ const translations = {
     hero_stat_arrival_lbl: "Response Time",
     hero_stat_cities_num: "Jeddah",
     hero_stat_cities_lbl: "Coverage Area",
-    
+
     tracking_title: "LIVE VISIT TRACKING",
     tracking_city: "Jeddah (Al Safa)",
     tracking_status: "Visit Status: En Route",
     tracking_desc: "Dr. Layla (Physiotherapist) is arriving in approximately 12 minutes.",
-    
+
     trust_1: "All providers are professional, compassionate, well-experienced, and fully licensed.",
     trust_2: "Same-day bookings and scheduled care available",
     trust_3: "Male and female practitioners available by choice",
     trust_4: "Secure digital medical summaries straight to your phone",
     trust_5: "Strict medical hygiene and infection prevention protocols are adhered to at all times.",
-    
+
     services_eyebrow: "What We Offer",
     services_title: "Four ways we bring care home.",
     service_1_title: "Physiotherapy at Home",
@@ -57,7 +57,7 @@ const translations = {
     price_physio: "From 200 SAR",
     price_consultation: "From 200 SAR",
     price_lab: "From 99 SAR",
-    
+
     how_eyebrow: "How it works",
     how_title: "From a phone call to care at your door.",
     how_step1_title: "Choose a service",
@@ -68,7 +68,7 @@ const translations = {
     how_step3_desc: "Our licensed, fully-equipped healthcare professional arrives directly at your doorstep.",
     how_step4_title: "Care summary",
     how_step4_desc: "Receive digital reports, doctor summaries, and recommendations directly on your phone.",
-    
+
     why_eyebrow: "Why Families Trust Us",
     why_title: "What it feels like to have care come to you.",
     why_quote1: '\"Having a licensed physiotherapist come to our home in Jeddah saved my father hours of stressful travel. The rehabilitation sessions were gentle, professional, and highly effective.\"',
@@ -81,7 +81,7 @@ const translations = {
     why_high_2_desc: "Rigorous vetting ensures clinical excellence and complete family safety.",
     why_high_3_title: "Bilingual Support",
     why_high_3_desc: "Clear, direct communication in both Arabic and English during visits.",
-    
+
     // About Us content
     about_eyebrow: "Our Story",
     about_title: "Compassionate care at your doorstep in Jeddah",
@@ -169,7 +169,7 @@ const translations = {
     blog_2_excerpt: "Learn about the hygienic sample collection protocols and how secure digital reports reach you...",
     blog_3_title: "Caring for Elderly Parents at Home: A Family's Guide",
     blog_3_excerpt: "A comprehensive guide on adjustments, physical safety setups, and home caregiver assistance...",
-    
+
     // FAQ
     faq_eyebrow: "Got Questions?",
     faq_title: "Frequently Asked Questions",
@@ -196,11 +196,11 @@ const translations = {
     form_submit: "Confirm Booking",
     success_title: "Request Received",
     success_desc: "Thank you, <strong>{name}</strong>.<br>We have registered your request for <strong>{service}</strong>.<br><br>Redirecting you to WhatsApp to complete your schedule details...",
-    
+
     Riyadh: "Jeddah (Central Branch)",
     Jeddah: "Jeddah",
     Dammam: "Jeddah (North Branch)",
-    
+
     // Missing Footer and CTA keys
     footer_phone_lbl: "Phone Support",
     footer_email_lbl: "Email Support",
@@ -216,7 +216,7 @@ const translations = {
     wa_online_status: "Typically replies in minutes",
     wa_welcome_msg: "Hello! How can we help you today with your home healthcare booking?",
     wa_start_chat: "Start Chat on WhatsApp",
-    
+
     // Accreditations
     accreditation_eyebrow: "Official Licensing & Strategic Partners",
     accreditation_title: "Accredited & Recognized by Saudi Authorities",
@@ -237,7 +237,7 @@ const translations = {
     nav_blogs: "المدونة والأسئلة الشائعة",
     btn_book: "احجز زيارة منزلية",
     btn_call: "اتصل بنا",
-    
+
     // Homepage content
     hero_eyebrow: "نخدم الآن العائلات في جدة",
     hero_title: "العيادة، عند <em>بابك</em>.",
@@ -248,18 +248,18 @@ const translations = {
     hero_stat_arrival_lbl: "وقت الاستجابة",
     hero_stat_cities_num: "جدة",
     hero_stat_cities_lbl: "منطقة التغطية",
-    
+
     tracking_title: "تتبع الزيارة المباشر",
     tracking_city: "جدة (حي الصفا)",
     tracking_status: "حالة الزيارة: في الطريق",
     tracking_desc: "الدكتورة ليلى (أخصائية العلاج الطبيعي) تصل خلال ١٢ دقيقة تقريباً.",
-    
+
     trust_1: "جميع مقدمي الخدمة محترفون، رحماء، ذوو خبرة عالية، ومترخصون بالكامل.",
     trust_2: "تتوفر زيارات في نفس اليوم وزيارات مجدولة",
     trust_3: "مقدمو الخدمة من الذكور والإناث، حسب اختيارك",
     trust_4: "تقارير رقمية تُرسل مباشرة إلى هاتفك",
     trust_5: "يتم الالتزام ببروتوكولات النظافة الطبية الصارمة والوقاية من العدوى في جميع الأوقات.",
-    
+
     services_eyebrow: "ما نقدمه",
     services_title: "أربع طرق نجلب بها الرعاية إلى منزلك.",
     service_1_title: "العلاج الطبيعي بالمنزل",
@@ -281,7 +281,7 @@ const translations = {
     price_physio: "تبدأ من ٢٠٠ ر.س",
     price_consultation: "تبدأ من ٢٠٠ ر.س",
     price_lab: "تبدأ من ٩٩ ر.س",
-    
+
     how_eyebrow: "آلية العمل",
     how_title: "من مكالمة هاتفية إلى رعاية عند بابك.",
     how_step1_title: "اختر الخدمة",
@@ -292,7 +292,7 @@ const translations = {
     how_step3_desc: "يصل ممارس الرعاية الصحية المرخص لدينا إلى باب بيتك حاملاً معه جميع المعدات الطبية اللازمة.",
     how_step4_title: "ملخص الرعاية",
     how_step4_desc: "اطلع على التقارير الطبية الرقمية، ملاحظات العلاج، والوصفات الطبية مباشرة على هاتفك المحمول.",
-    
+
     why_eyebrow: "تثق بنا العائلات",
     why_title: "كيف تبدو الرعاية وهي تأتي إليك.",
     why_quote1: '\"إن توفير أخصائي علاج طبيعي مرخص يأتي لبيتنا في جدة وفر على والدي ساعات من السفر المتعب بالسيارة لإعادة التأهيل بعد السكتة الدماغية. الجلسات كانت لطيفة ومريحة وفعالة للغاية.\"',
@@ -305,7 +305,7 @@ const translations = {
     why_high_2_desc: "نتحقق بدقة من الخلفية المهنية لضمان التميز الطبي والأمان التام لعائلتك.",
     why_high_3_title: "تواصل ثنائي اللغة",
     why_high_3_desc: "تواصل واضح ومباشر باللغتين العربية والإنجليزية لراحة تامة أثناء تقديم الرعاية.",
-    
+
     // About Us content
     about_eyebrow: "قصتنا",
     about_title: "رعاية صحية رحيمة عند باب بيتك في جدة",
@@ -420,11 +420,11 @@ const translations = {
     form_submit: "تأكيد الطلب",
     success_title: "تم استلام الطلب",
     success_desc: "شكراً لك يا <strong>{name}</strong>.<br>لقد سجلنا طلبك لـ <strong>{service}</strong>.<br><br>جاري تحويلك الآن لتأكيد تفاصيل الموعد عبر واتساب...",
-    
+
     Riyadh: "جدة (الفرع الرئيسي)",
     Jeddah: "جدة",
     Dammam: "جدة (الفرع الشمالي)",
-    
+
     // Missing Footer and CTA keys
     footer_phone_lbl: "الدعم الهاتفي",
     footer_email_lbl: "الدعم عبر البريد الإلكتروني",
@@ -521,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnAr.classList.remove('active');
       }
     }
-    
+
     // Add loaded class to body to prevent text flash
     htmlEl.classList.add('translations-loaded');
 
@@ -625,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'Home Consultation': { en: 'From 200 SAR', ar: 'تبدأ من ٢٠٠ ر.س' }
   };
 
-  window.updateFormPriceDisplay = function(selectElem) {
+  window.updateFormPriceDisplay = function (selectElem) {
     if (!selectElem) return;
     const formGroup = selectElem.closest('.form-group') || selectElem.parentElement;
     let badgeElem = formGroup.querySelector('.form-price-badge-preview');
@@ -659,7 +659,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalFormContent = document.getElementById('modal-form-content');
   const modalSuccessContent = document.getElementById('modal-success-content');
   const successDescRender = document.getElementById('success-desc-render');
-  
+
   let lastFocusedElement = null;
 
   if (modalOverlay) {
@@ -668,7 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalOverlay.classList.add('active');
       modalOverlay.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
-      
+
       if (bookingForm) bookingForm.reset();
       if (modalFormContent) modalFormContent.style.display = 'block';
       if (modalSuccessContent) modalSuccessContent.style.display = 'none';
@@ -772,53 +772,53 @@ document.addEventListener('DOMContentLoaded', () => {
         method: "POST",
         body: formData
       })
-      .then(response => response.json())
-      .then(data => {
-        // Construct WhatsApp Deep Link Message
-        const activeLang = htmlEl.getAttribute('data-lang') || 'ar';
-        const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
-        const cityText = citySelect.options[citySelect.selectedIndex].text;
-        
-        let whatsAppMsg = "";
-        if (activeLang === 'ar') {
-          whatsAppMsg = `طلب حجز جديد من الموقع:\n\nالاسم: ${nameInput.value.trim()}\nرقم الجوال: ${phoneInput.value.trim()}\nالخدمة: ${serviceText}\nالمدينة: ${cityText}`;
-          if (dateInput && dateInput.value) whatsAppMsg += `\nالتاريخ المفضل: ${dateInput.value}`;
-          if (msgInput && msgInput.value) whatsAppMsg += `\nالرسالة: ${msgInput.value.trim()}`;
-        } else {
-          whatsAppMsg = `New Booking Request from Website:\n\nName: ${nameInput.value.trim()}\nPhone: ${phoneInput.value.trim()}\nService: ${serviceText}\nCity: ${cityText}`;
-          if (dateInput && dateInput.value) whatsAppMsg += `\nPreferred Date: ${dateInput.value}`;
-          if (msgInput && msgInput.value) whatsAppMsg += `\nMessage: ${msgInput.value.trim()}`;
-        }
+        .then(response => response.json())
+        .then(data => {
+          // Construct WhatsApp Deep Link Message
+          const activeLang = htmlEl.getAttribute('data-lang') || 'ar';
+          const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+          const cityText = citySelect.options[citySelect.selectedIndex].text;
 
-        const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsAppMsg)}`;
+          let whatsAppMsg = "";
+          if (activeLang === 'ar') {
+            whatsAppMsg = `طلب حجز جديد من الموقع:\n\nالاسم: ${nameInput.value.trim()}\nرقم الجوال: ${phoneInput.value.trim()}\nالخدمة: ${serviceText}\nالمدينة: ${cityText}`;
+            if (dateInput && dateInput.value) whatsAppMsg += `\nالتاريخ المفضل: ${dateInput.value}`;
+            if (msgInput && msgInput.value) whatsAppMsg += `\nالرسالة: ${msgInput.value.trim()}`;
+          } else {
+            whatsAppMsg = `New Booking Request from Website:\n\nName: ${nameInput.value.trim()}\nPhone: ${phoneInput.value.trim()}\nService: ${serviceText}\nCity: ${cityText}`;
+            if (dateInput && dateInput.value) whatsAppMsg += `\nPreferred Date: ${dateInput.value}`;
+            if (msgInput && msgInput.value) whatsAppMsg += `\nMessage: ${msgInput.value.trim()}`;
+          }
 
-        if (isModal && modalSuccessContent && successDescRender) {
-          const rawTemplate = translations[activeLang].success_desc;
-          const finalMessage = rawTemplate
-            .replace('{name}', nameInput.value.trim())
-            .replace('{service}', serviceText);
-          
-          successDescRender.innerHTML = finalMessage;
-          if (modalFormContent) modalFormContent.style.display = 'none';
-          modalSuccessContent.style.display = 'flex';
-          
-          setTimeout(() => {
+          const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsAppMsg)}`;
+
+          if (isModal && modalSuccessContent && successDescRender) {
+            const rawTemplate = translations[activeLang].success_desc;
+            const finalMessage = rawTemplate
+              .replace('{name}', nameInput.value.trim())
+              .replace('{service}', serviceText);
+
+            successDescRender.innerHTML = finalMessage;
+            if (modalFormContent) modalFormContent.style.display = 'none';
+            modalSuccessContent.style.display = 'flex';
+
+            setTimeout(() => {
+              window.location.href = waUrl;
+            }, 2000);
+          } else {
             window.location.href = waUrl;
-          }, 2000);
-        } else {
-          window.location.href = waUrl;
-        }
-      })
-      .catch(error => {
-        console.error("Submission error:", error);
-        alert(activeLang === 'ar' ? 'عذراً، حدث خطأ أثناء إرسال طلبك. يرجى المحاولة مرة أخرى.' : 'Sorry, something went wrong. Please try again.');
-        if (submitBtn) submitBtn.disabled = false;
-      });
+          }
+        })
+        .catch(error => {
+          console.error("Submission error:", error);
+          alert(activeLang === 'ar' ? 'عذراً، حدث خطأ أثناء إرسال طلبك. يرجى المحاولة مرة أخرى.' : 'Sorry, something went wrong. Please try again.');
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   };
 
   if (bookingForm) handleBookingFormSubmit(bookingForm, true);
-  
+
   const contactPageForm = document.getElementById('contact-form');
   if (contactPageForm) handleBookingFormSubmit(contactPageForm, false);
 
@@ -838,7 +838,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const panelId = trigger.getAttribute('aria-controls');
       const panel = document.getElementById(panelId);
       const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
-      
+
       faqTriggers.forEach(t => {
         t.setAttribute('aria-expanded', 'false');
         const p = document.getElementById(t.getAttribute('aria-controls'));
