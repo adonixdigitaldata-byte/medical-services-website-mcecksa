@@ -6,4 +6,4 @@ Disallow: /.git/
 Disallow: /scratch/
 
 # Sitemap location
-Sitemap: https://mceccare.com/sitemap.xml
+Sitemap: https://www.mceccare.com/sitemap.xml
